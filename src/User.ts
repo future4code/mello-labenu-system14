@@ -6,4 +6,6 @@ export interface User {
     name: string;
     email: string;
     birthDate: moment.Moment;
+
+    getName(): void   
 }

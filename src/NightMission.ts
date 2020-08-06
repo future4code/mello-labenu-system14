@@ -1,6 +1,9 @@
-import { Mello } from "./Mission";
+import { Mission } from "./Mission";
 
-class MelloNaNight extends Mello{
-
-
+export class NightMission extends Mission {
+    public setName(name:string) {
+        if (name.indexOf("-na-night") !== -1) {
+            super.setName(name);
+        }
+    }
 }
