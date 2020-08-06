@@ -20,4 +20,8 @@ export class Teacher implements User {
         public birthDate: moment.Moment,
         public specialities: TeacherSpeciality[]
     ) {}
+
+    public getName(): string {
+        return this.name
+    }
 }

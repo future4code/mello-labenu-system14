@@ -1,7 +1,5 @@
-import { Mello } from "./Mission";
+import { Mission } from "./Mission";
 
-class MelloFullTime extends Mello{
-
-
-
+export class FullTimeMission extends Mission {
+    
 }

@@ -1,0 +1,64 @@
+[
+   {
+      "id": "0120063870",
+      "name": "Renata Karato",
+      "email": "rmkarato@gmail.com",
+      "birthDate": "1989-04-06T03:00:00.000Z",
+      "hobbies": [
+         "correr",
+         "dormir"
+      ]
+   },
+   {
+      "id": "0120058752",
+      "name": "Kaueny Alves",
+      "email": "k.alves@gmail.com",
+      "birthDate": "1996-05-10T03:00:00.000Z",
+      "hobbies": [
+         "estudar",
+         "comer"
+      ]
+   },
+   {
+      "id": "0120042001",
+      "name": "Késsia Lopes",
+      "email": "kessia@gmail.com",
+      "birthDate": "1997-06-05T03:00:00.000Z",
+      "hobbies": [
+         "ver TV",
+         "ler"
+      ]
+   },
+   {
+      "id": "0120058789",
+      "name": "João de Souza",
+      "email": "joao@gmail.com",
+      "birthDate": "1982-05-05T03:00:00.000Z",
+      "hobbies": [
+         "comer",
+         "andar de bike",
+         "brincar com os filhos"
+      ]
+   },
+   {
+      "id": "0120052896",
+      "name": "Mariana Lima",
+      "email": "m.lima@gmail.com",
+      "birthDate": "1985-01-06T03:00:00.000Z",
+      "hobbies": [
+         "yoga",
+         "viajar",
+         "dormir"
+      ]
+   },
+   {
+      "id": "0025026789",
+      "name": "Rodrigo Rodrigues",
+      "email": "ro.drigues@gmail.com",
+      "birthDate": "1995-12-31T02:00:00.000Z",
+      "hobbies": [
+         "skate",
+         "cinema"
+      ]
+   }
+]

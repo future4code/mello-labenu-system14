@@ -15,4 +15,8 @@ export class Student implements User {
     public getAge(): number {
         return moment().diff(this.birthDate, "years")
     }
+
+    public getName(): string {
+        return this.name
+    }
 }
