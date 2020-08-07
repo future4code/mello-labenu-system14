@@ -57,5 +57,25 @@
       "specialities": [
          "React"
       ]
+   },
+   {
+      "id": "P7",
+      "name": "Amanda Rangel",
+      "email": "amanda@labenu.com.br",
+      "birthDate": "1987-05-06T03:00:00.000Z",
+      "specialities": [
+         "Typescript",
+         "Programação Orientada À Objetos"
+      ]
+   },
+   {
+      "id": "P8",
+      "name": "João Golias",
+      "email": "goli@labenu.com.br",
+      "birthDate": "1992-08-01T03:00:00.000Z",
+      "specialities": [
+         "Backend",
+         "Typescript"
+      ]
    }
 ]

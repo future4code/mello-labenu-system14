@@ -154,5 +154,57 @@
          "dançar",
          "correr"
       ]
+   },
+   {
+      "id": "B1",
+      "name": "Douglas Filho",
+      "email": "douglas_filho@gmail.com",
+      "birthDate": "1990-11-12T02:00:00.000Z",
+      "hobbies": [
+         "origami",
+         "música"
+      ]
+   },
+   {
+      "id": "B2",
+      "name": "Lucas Duarte",
+      "email": "lucasduarte@gmail.com",
+      "birthDate": "1992-04-20T03:00:00.000Z",
+      "hobbies": [
+         "dançar",
+         "música"
+      ]
+   },
+   {
+      "id": "B3",
+      "name": "Michelle Louzada",
+      "email": "louzada.mi@gmail.com",
+      "birthDate": "1985-07-15T03:00:00.000Z",
+      "hobbies": [
+         "compras",
+         "praia",
+         "livros"
+      ]
+   },
+   {
+      "id": "B4",
+      "name": "Claudia Trevizan",
+      "email": "claudia.trevi@gmail.com",
+      "birthDate": "1978-04-01T03:00:00.000Z",
+      "hobbies": [
+         "carros",
+         "futebol"
+      ]
+   },
+   {
+      "id": "B5",
+      "name": "René Monteiro",
+      "email": "rene.m@gmail.com",
+      "birthDate": "1981-04-05T03:00:00.000Z",
+      "hobbies": [
+         "tecnologia",
+         "dançar",
+         "correr"
+      ]
    }
 ]

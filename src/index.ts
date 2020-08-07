@@ -71,32 +71,32 @@ const missions: any = fileManagerMissions.readDatabase();
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* ---------- TURMA NOTURNA ---------- */
-const newNightMission: NightMission = new NightMission("4", moment("15/06/2020", "DD/MM/YYYY"), moment("15/12/2020", "DD/MM/YYYY"), [], [], 1)
+const newNightMission: NightMission = new NightMission("3", moment("15/06/2020", "DD/MM/YYYY"), moment("15/12/2020", "DD/MM/YYYY"), [], [], 4)
 // ADICIONANDO NOME NA TURMA
-newNightMission.setName("Jackson-na-night")
+newNightMission.setName("Bouman-na-night")
 
 // ADICIONANDO ALUNOS NA TURMA
-const newStudent1: Student = new Student ("J1", "Maria Alice de Menezes", "menezesmaria@gmail.com", moment("20/04/1980", "DD/MM/YYYY"), ["origami", "música"])
-newNightMission.addStudent(newStudent1)
+// const newStudent1: Student = new Student ("B1", "Douglas Filho", "douglas_filho@gmail.com", moment("12/11/1990", "DD/MM/YYYY"), ["origami", "música"])
+// newNightMission.addStudent(newStudent1)
 
-const newStudent2: Student = new Student ("J2", "Renan Kajihara", "renan.kaji@gmail.com", moment("25/05/1982", "DD/MM/YYYY"), ["dançar", "música"])
-newNightMission.addStudent(newStudent2)
+// const newStudent2: Student = new Student ("B2", "Lucas Duarte", "lucasduarte@gmail.com", moment("20/04/1992", "DD/MM/YYYY"), ["dançar", "música"])
+// newNightMission.addStudent(newStudent2)
 
-const newStudent3: Student = new Student ("J3", "Lucas Suzuki", "suzukilucas@gmail.com", moment("27/03/1991", "DD/MM/YYYY"), ["compras", "praia", "livros"])
-newNightMission.addStudent(newStudent3)
+// const newStudent3: Student = new Student ("B3", "Michelle Louzada", "louzada.mi@gmail.com", moment("15/07/1985", "DD/MM/YYYY"), ["compras", "praia", "livros"])
+// newNightMission.addStudent(newStudent3)
 
-const newStudent4: Student = new Student ("J4", "Lais Teixeira", "teixeiralais@gmail.com", moment("09/01/1988", "DD/MM/YYYY"), ["carros", "futebol"])
-newNightMission.addStudent(newStudent4)
+// const newStudent4: Student = new Student ("B4", "Claudia Trevizan", "claudia.trevi@gmail.com", moment("01/04/1978", "DD/MM/YYYY"), ["carros", "futebol"])
+// newNightMission.addStudent(newStudent4)
 
-const newStudent5: Student = new Student ("J5", "Nathalia Pimentel", "nathpimentel@gmail.com", moment("31/12/1990", "DD/MM/YYYY"), ["tecnologia", "dançar", "correr"])
-newNightMission.addStudent(newStudent5)
+// const newStudent5: Student = new Student ("B5", "René Monteiro", "rene.m@gmail.com", moment("05/04/1981", "DD/MM/YYYY"), ["tecnologia", "dançar", "correr"])
+// newNightMission.addStudent(newStudent5)
 
-// ADICIONANDO PROFS NA TURMA
-const newTeacher1: Teacher = new Teacher ("P5", "Paula Arantes", "p.arantes@labenu.com.br", moment("06/05/1991", "DD/MM/YYYY"), [TeacherSpeciality.REACT])
-newNightMission.addTeacher(newTeacher1)
+// // ADICIONANDO PROFS NA TURMA
+// const newTeacher1: Teacher = new Teacher ("P7", "Amanda Rangel", "amanda@labenu.com.br", moment("06/05/1987", "DD/MM/YYYY"), [TeacherSpeciality.TYPESCRIPT, TeacherSpeciality.OOP])
+// newNightMission.addTeacher(newTeacher1)
 
-const newTeacher2: Teacher = new Teacher ("P6", "Caio Teixeira", "teixeira.caio@labenu.com.br", moment("01/10/1994", "DD/MM/YYYY"), [TeacherSpeciality.REACT])
-newNightMission.addTeacher(newTeacher2)
+// const newTeacher2: Teacher = new Teacher ("P8", "João Golias", "goli@labenu.com.br", moment("01/08/1992", "DD/MM/YYYY"), [TeacherSpeciality.BACKEND, TeacherSpeciality.TYPESCRIPT])
+// newNightMission.addTeacher(newTeacher2)
 
 // // ATUALIZANDO ARRAY
 // missions.push(newNightMission)
@@ -116,12 +116,19 @@ newNightMission.addTeacher(newTeacher2)
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
 
 /* ---------- PEGAR IDADE A PARTIR DO ID ---------- */
-const studentAge: Student = new Student("M6", "Hello Kitty", "hellokitty@gmail.com", moment("31/03/1974", "DD/MM/YYYY"), ["amigos", "dançar"])
 
-const viewAge = (id: string) => {
-    if(studentAge.id === id) {
-        console.log(`${studentAge.getName()} tem ${studentAge.getAge()} anos.`)
+const viewAge = (id: string) : void => {
+    const dataStudents: Student[] = JSON.parse(fs.readFileSync("./students.json").toString())
+    
+    for(let data of dataStudents) {
+        if(data.id === id) {
+            return (
+                console.log(`${data.name} tem ${moment().diff(data.birthDate, "years")} anos.`)
+            )
+        }
     }
 }
 
-viewAge("M6")
+viewAge("M1")
+viewAge("M2")
+viewAge("M3")
