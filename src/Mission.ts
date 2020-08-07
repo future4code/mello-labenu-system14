@@ -4,10 +4,10 @@ import { Student } from "./Student";
 
 moment.locale("pt-br");
 export abstract class Mission {
-   
+    private name: string = "";
+
     constructor(
         private id: string,
-        private name: string,
         private startDate: moment.Moment,
         private endDate: moment.Moment,
         private teachers: Teacher[],
