@@ -4,7 +4,7 @@ import { Teacher, TeacherSpeciality } from "./Teacher";
 import { FullTimeMission } from "./FullTimeMission";
 import { JSONFileManager } from "./JSONFileManager";
 import { Mission } from "./Mission";
-import { StudentManager } from "./StudentsManager";
+import { MainTaskManager } from "./MainTaskManager";
 import { NightMission } from "./NightMission";
 import * as fs from 'fs'
 import { runInNewContext } from "vm";
@@ -132,3 +132,8 @@ const viewAge = (id: string) : void => {
 viewAge("M1")
 viewAge("M2")
 viewAge("M3")
+
+/* ---------- PRINT STUDENTS e TEACHERS ---------- */
+const print = new MainTaskManager()
+print.printStudents()
+print.printTeachers()
